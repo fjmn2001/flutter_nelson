@@ -78,6 +78,11 @@ flutter:
     - assets/img/profile2.png
     - assets/img/profile3.png
     - assets/img/profile4.png
+    - assets/img/photo.jpeg
+    - assets/img/photo2.jpeg
+    - assets/img/photo3.jpg
+    - assets/img/photo4.jpg
+    - assets/img/photo5.jpg
 
   fonts:
     - family: Lato

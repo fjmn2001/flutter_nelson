@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'button_purple.dart';
 
 class Description_place extends StatelessWidget {
 
@@ -15,7 +17,7 @@ class Description_place extends StatelessWidget {
 
 
     final star = Container(
-      margin: EdgeInsets.only(top: 283.0, right: 3.0),
+      margin: EdgeInsets.only(top: 343.0, right: 3.0),
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
@@ -23,7 +25,7 @@ class Description_place extends StatelessWidget {
     );
 
     final star_border = Container(
-      margin: EdgeInsets.only(top: 283.0, right: 3.0),
+      margin: EdgeInsets.only(top: 343.0, right: 3.0),
       child: Icon(
         Icons.star_border,
         color: Color(0xFFf2C611),
@@ -32,7 +34,7 @@ class Description_place extends StatelessWidget {
 
 
     final star_alf = Container(
-      margin: EdgeInsets.only(top: 283.0, right: 3.0),
+      margin: EdgeInsets.only(top: 343.0, right: 3.0),
       child: Icon(
         Icons.star_half,
         color: Color(0xFFf2C611),
@@ -57,7 +59,7 @@ class Description_place extends StatelessWidget {
     final title_stars = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 280.0, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: 343.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w900, fontFamily: "Lato"),
@@ -70,7 +72,9 @@ class Description_place extends StatelessWidget {
       ],
     );
     return Column(
-      children: <Widget>[title_stars, description_content],
+      crossAxisAlignment: CrossAxisAlignment.start,
+
+      children: <Widget>[title_stars, description_content, ButtonPurple("Navigate")],
     );
   }
 }
