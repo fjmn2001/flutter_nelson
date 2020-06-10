@@ -38,12 +38,14 @@ class CardImageProfile extends StatelessWidget{
     );
 
 
+//    Contrary to popular belief, Lorem Ipsum is not simply random text.
+
     final informationCard = Stack(
-      alignment: Alignment(-0.2,1.5),
+      alignment: Alignment(0.3,1.5),
       children: <Widget>[
         Container(
           width: 250.0,
-          height: 100.0,
+          height: 120.0,
           margin: EdgeInsets.only(
             right: 50.0
           ),
@@ -52,6 +54,40 @@ class CardImageProfile extends StatelessWidget{
             color: Colors.white,
           ),
           padding: EdgeInsets.all(25.0),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                child: Text("Knuckles mountain range",
+                style: TextStyle(
+                  fontSize: 17.0,
+                  fontWeight: FontWeight.w900
+                ),),
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                  left: 2.0,
+                  right: 2.0
+                ),
+                child: Text("Contrary to popular belief, Lorem Ipsum is not simply random text.",
+                  style: TextStyle(
+                      fontSize: 8.0,
+//                      fontWeight: FontWeight.w900
+                  ),),
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                    left: 2.0,
+                    right: 2.0
+                ),
+                child: Text("Steps 123.123.123",
+                  style: TextStyle(
+                    color: Colors.amber
+//                    fontSize: 8.0,
+//                      fontWeight: FontWeight.w900
+                  ),),
+              )
+            ],
+          ),
         ),
         FloatingActionButtonGreen()
       ],
